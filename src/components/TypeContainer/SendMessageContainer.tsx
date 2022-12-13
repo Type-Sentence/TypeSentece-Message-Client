@@ -10,6 +10,7 @@ const SendMessageContainer: FC<Props> = () => {
     return (
         <form className={style.sendMessageContainer} onSubmit={HandleSubmitMessage}>
             <input type="text" placeholder="# Send a message in general chat" />
+            <input type="submit" value="Send" />
         </form>
     )
 }
