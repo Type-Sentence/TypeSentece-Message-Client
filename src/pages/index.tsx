@@ -11,6 +11,9 @@ type Props = {
 }
 
 const MainPage: NextPage<Props> = () => {
+
+    const socket = io("http://localhost:3001");
+
     return (
         <div id={style.app}>
             <div className={style.container}>

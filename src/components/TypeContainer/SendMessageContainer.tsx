@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { HandleSubmitMessage } from "../../controllers/sendMessageController";
 import style from "./index.module.scss";
 
 type Props = {
@@ -7,7 +8,9 @@ type Props = {
 
 const SendMessageContainer: FC<Props> = () => {
     return (
-        <div className={style.sendMessageContainer}># Inserisci il messaggio</div>
+        <form className={style.sendMessageContainer} onSubmit={HandleSubmitMessage}>
+            <input type="text" placeholder="# Send a message in general chat" />
+        </form>
     )
 }
 
