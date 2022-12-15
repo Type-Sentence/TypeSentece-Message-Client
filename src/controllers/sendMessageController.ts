@@ -14,5 +14,6 @@ export const HandleSubmitMessage = async (event: React.FormEvent<HTMLFormElement
     const messageContent = message.value
     console.log(messageContent);
 
-    socket.emit("new_message", messageContent)
+    socket.emit("new_message", messageContent);
+    (event.currentTarget[0] as HTMLInputElement).value = "";
 }
