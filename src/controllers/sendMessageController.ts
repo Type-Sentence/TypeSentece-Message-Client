@@ -1,6 +1,10 @@
 import React from "react";
-import { socket } from "../exports/WebSoket";
-import { Message } from "../utils/interefaces";
+import { io, Socket } from "socket.io-client";
+const socket = io("http://localhost:3001/api")
+
+socket.on("connect", () => {
+    console.log(`Connected with id: ${socket.id}`)
+})
 
 export const HandleSubmitMessage = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
