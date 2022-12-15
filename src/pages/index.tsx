@@ -4,14 +4,13 @@ import Image from 'next/image'
 import TypeContainer from '../components/TypeContainer'
 import style from '../utils/styles/Home.module.scss'
 import MessageContainer from '../components/MessageContainer'
-import { io } from 'socket.io-client'
+import { io, Socket } from 'socket.io-client'
 
 type Props = {
 
 }
 
 const MainPage: NextPage<Props> = () => {
-
     return (
         <div id={style.app}>
             <div className={style.container}>
@@ -20,15 +19,6 @@ const MainPage: NextPage<Props> = () => {
             </div>
         </div>
     )
-}
-
-export const getServerSideProps = async (context: GetServerSidePropsContext) => {
-
-    const socket = io("http://localhost:3001/api")
-
-    return {
-        props: {}
-    }
 }
 
 export default MainPage
