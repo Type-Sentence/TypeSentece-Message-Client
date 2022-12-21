@@ -17,4 +17,11 @@
   align-items: center;
   gap: 0.25rem;
   box-shadow: rgb(0 0 0 / 30%) 0.4rem 0.4rem 0 0;
+
+  .header {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+  }
 }
