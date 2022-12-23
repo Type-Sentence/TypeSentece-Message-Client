@@ -13,7 +13,7 @@ const MessageContainer: FC = () => {
             author: {
                 avatar: "https://imgur.com/dS5gThg.png",
                 id: "12341234",
-                username: "",
+                username: "gimmi",
                 discriminator: "#1234",
                 banner: "test"
             }
