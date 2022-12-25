@@ -1,11 +1,14 @@
 import { FC } from 'react'
+import style from "../fields.module.scss";
 
 type Props = {}
 
 
 const LoginContainer: FC<Props> = () => {
     return (
-        <div>LoginContainer</div>
+        <div className={style.container}>
+            Login
+        </div>
     )
 }
 
