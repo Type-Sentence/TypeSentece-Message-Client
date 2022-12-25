@@ -15,3 +15,11 @@ export interface MessageAuthor {
     avatar: string
     banner?: string;
 }
+
+export interface User {
+    id: string;
+    username: string;
+    discriminator: string;
+    avatar: string;
+    banner?: string;
+}
