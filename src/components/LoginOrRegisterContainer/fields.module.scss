@@ -2,6 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin: 2rem 0;
 
     .titleContainer {
         display: flex;
@@ -25,7 +28,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: auto;
         gap: 1rem;
 
         .inputField {
@@ -37,6 +40,18 @@
             font-size: 1rem;
             border-radius: 0.65rem;
             padding: 0.5rem 0.7rem;
+            width: 60%;
+        }
+
+        input[type="submit"] {
+            width: 60%;
+            outline: none;
+            border-style: none;
+            font-family: "Roboto Mono", monospace;
+            background-color: var(--black1);
+            border-radius: 0.65rem;
+            padding: 0.5rem 0.7rem;
+            font-size: 1rem;
         }
     }
 }

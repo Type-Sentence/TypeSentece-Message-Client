@@ -15,16 +15,17 @@ const RegisterOrLoginContainer: FC<Props> = ({ user }) => {
 
     return (
         <div className={style.container}>
-            <div className={style.header}>
-                {user ?
-                    <>
+            {user ?
+                <>
+                    <div className={style.header}>
                         <ChatSettingsLabel />
                         <AccountLabel />
-                    </> :
-                    <FormsContainer />
-                }
-            </div>
-            <div className={style.body}></div>
+                    </div>
+                    <div className={style.body}></div>
+                </>
+                :
+                <FormsContainer />
+            }
         </div>
     )
 }
