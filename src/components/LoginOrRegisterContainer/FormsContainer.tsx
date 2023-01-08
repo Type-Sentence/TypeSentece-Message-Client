@@ -15,7 +15,7 @@ const FormsContainer: FC<Props> = () => {
     return (
         <>
             {
-                registerMode ? <RegisterContainer /> : <LoginContainer changeRegisterMode={changeRegisterMode} />
+                registerMode ? <RegisterContainer changeRegisterMode={changeRegisterMode} /> : <LoginContainer changeRegisterMode={changeRegisterMode} />
             }
         </>
     )
