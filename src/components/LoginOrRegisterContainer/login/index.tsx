@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import style from "../fields.module.scss";
-import Link from 'next/link';
+import { TbUserPlus } from "react-icons/tb"
 
 type Props = {
     changeRegisterMode(): void;
@@ -25,7 +25,11 @@ const LoginContainer: FC<Props> = ({ changeRegisterMode }) => {
                     </div>
                     <div className={style.forgotPw}>Forgot password?</div>
                 </div>
-                <input type="submit" value="Sing Up" />
+                <button type="submit">
+                    <TbUserPlus className={style.icon} />
+                    Sing In
+                </button>
+
             </form>
         </div>
     )
