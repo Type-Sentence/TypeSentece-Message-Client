@@ -8,10 +8,14 @@ type Props = {}
 const FormsContainer: FC<Props> = () => {
     const [registerMode, setRegisterMode] = useState<boolean>(false)
 
+    const changeRegisterMode = () => {
+        registerMode ? setRegisterMode(false) : setRegisterMode(true);
+    }
+
     return (
         <>
             {
-                registerMode ? <RegisterContainer /> : <LoginContainer />
+                registerMode ? <RegisterContainer /> : <LoginContainer changeRegisterMode={changeRegisterMode} />
             }
         </>
     )
