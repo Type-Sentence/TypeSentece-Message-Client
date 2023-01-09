@@ -15,7 +15,8 @@ const MessageContainer: FC = () => {
                 id: "12341234",
                 username: "gimmi",
                 discriminator: "#1234",
-                banner: "test"
+                banner: "test",
+                email: "r@r.com"
             }
         },
         {
@@ -28,7 +29,8 @@ const MessageContainer: FC = () => {
                 id: "12341234",
                 username: "rikvik2006",
                 discriminator: "#1234",
-                banner: "test"
+                banner: "test",
+                email: "v@v.com"
             }
         },
         {
@@ -41,7 +43,8 @@ const MessageContainer: FC = () => {
                 id: "12341234",
                 username: "Lorem",
                 discriminator: "#1234",
-                banner: "test"
+                banner: "test",
+                email: "t@t.com"
             }
         }
     ]

@@ -8,17 +8,21 @@ export interface Message {
     time: number;
 }
 
+
+//Only for message Author
 export interface MessageAuthor {
     id: string;
     username: string;
+    email: string;
     discriminator: string;
-    avatar: string
+    avatar: string;
     banner?: string;
 }
 
 export interface User {
     id: string;
     username: string;
+    email: string;
     discriminator: string;
     avatar: string;
     banner?: string;
