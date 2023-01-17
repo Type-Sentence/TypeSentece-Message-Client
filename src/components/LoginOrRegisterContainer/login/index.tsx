@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import style from "../fields.module.scss";
 import { TbUserPlus } from "react-icons/tb"
+import { handleSubmitLogin } from '../../../utils/helpers/auth/handleSubmitLogin';
 
 type Props = {
     changeRegisterMode(): void;
@@ -15,9 +16,9 @@ const LoginContainer: FC<Props> = ({ changeRegisterMode }) => {
                 <span className={style.switcher} onClick={changeRegisterMode}> or Register</span>
             </div>
 
-            <form className={style.formContainer}>
+            <form className={style.formContainer} onSubmit={handleSubmitLogin}>
                 <input type="text" className={style.inputField} placeholder="email" />
-                <input type="text" className={style.inputField} placeholder="password" />
+                <input type="password" className={style.inputField} placeholder="password" />
                 <div className={style.optionsContainer}>
                     <div className={style.rememberMeContainer}>
                         <input type="checkbox" id="remember-me" />
