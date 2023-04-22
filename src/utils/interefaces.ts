@@ -5,7 +5,7 @@ export interface Message {
     id: string;
     content: string;
     author: MessageAuthor;
-    time: number;
+    createdAt: number;
 }
 
 

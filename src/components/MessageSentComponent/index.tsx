@@ -20,7 +20,7 @@ const MessageSentComponent: FC<Props> = ({ message }) => {
                     <div className={style.messageAuthor}>
                         <div className={style.name}>{message.author.username}</div>
                     </div>
-                    <div className={style.messageTime}>{moment(message.time).format("DD/MM/YYYY HH:mm")}</div>
+                    <div className={style.messageTime}>{moment(message.createdAt).format("DD/MM/YYYY HH:mm")}</div>
                 </div>
                 <div className={style.messageContent}>{message.content}</div>
             </div>

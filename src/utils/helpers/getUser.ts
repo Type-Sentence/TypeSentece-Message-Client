@@ -13,7 +13,7 @@ export const getUser = async (ctx: GetServerSidePropsContext) => {
     }
 
     try {
-        const { data: user } = await axios.get<User>("http://localhost/api/user", { headers });
+        const { data: user } = await axios.get<User>("http://localhost:3001/api/user", { headers });
         return { props: { user } }
     } catch (err) {
         console.log(err);
