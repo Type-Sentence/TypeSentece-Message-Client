@@ -1,7 +1,7 @@
 import { GetServerSidePropsContext } from "next";
 import { validateCookie } from "./validateCookies";
 import axios from "axios";
-import { User } from "../interefaces";
+import { IUserWithCredentials } from "../interefaces";
 
 export const getUser = async (ctx: GetServerSidePropsContext) => {
     const headers = validateCookie(ctx);
@@ -13,7 +13,7 @@ export const getUser = async (ctx: GetServerSidePropsContext) => {
     }
 
     try {
-        const { data: user } = await axios.get<User>("http://localhost:3001/api/user", { headers });
+        const { data: user } = await axios.get<IUserWithCredentials>("http://localhost:3001/api/user", { headers });
         return { props: { user } }
     } catch (err) {
         console.log(err);

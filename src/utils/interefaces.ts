@@ -1,5 +1,3 @@
-import { SingletonRouter } from "next/router";
-
 export interface Message {
     grupId?: string;
     id: string;
@@ -19,11 +17,24 @@ export interface MessageAuthor {
     banner?: string;
 }
 
-export interface User {
+export interface IUser {
     id: string;
     username: string;
-    email: string;
     discriminator: string;
+    tag: string;
     avatar: string;
-    banner?: string;
+    banner: string;
 }
+
+export interface IUserWithCredentials extends IUser {
+    email: string;
+    password: string;
+}
+
+export interface GatewayMessageRequest {
+    content: string;
+    authorId: string
+    createdAt: number;
+}
+
+export interface GatewayUserRequest { }
