@@ -6,10 +6,10 @@ import style from '../utils/styles/Home.module.scss'
 import MessageContainer from '../components/MessageContainer'
 import RegisterOrLoginContainer from '../components/LoginOrRegisterContainer'
 import { getUser } from '../utils/helpers/getUser'
-import { User } from '../utils/interefaces'
+import { IUserWithCredentials } from '../utils/interefaces'
 
 type Props = {
-    user: false | User
+    user: false | IUserWithCredentials
 }
 
 const MainPage: NextPage<Props> = ({ user }) => {

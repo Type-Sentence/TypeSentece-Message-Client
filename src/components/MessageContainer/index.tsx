@@ -37,7 +37,7 @@ const MessageContainer: FC = () => {
             content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quos aliquid laudantium similique nihil doloribus maxime laborum rem ipsum earum autem? Architecto distinctio debitis esse sapiente consequuntur doloribus laborum recusandae!",
             id: "13251234712374",
             grupId: "0000",
-            createdAt: 1671284022,
+            createdAt: 1524406566000,
             author: {
                 avatar: "https://imgur.com/ZCaj5ze.png",
                 id: "12341234",

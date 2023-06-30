@@ -2,12 +2,12 @@ import { FC } from "react"
 import style from "./index.module.scss";
 import ChatSettingsLabel from "./headerLabel/ChatSettingsLabel";
 import AccountLabel from "./headerLabel/AccountLabel";
-import { User } from "../../utils/interefaces";
+import { IUserWithCredentials } from "../../utils/interefaces";
 import LoginContainer from "./login";
 import FormsContainer from "./FormsContainer";
 
 type Props = {
-    user: false | User;
+    user: false | IUserWithCredentials;
 }
 
 const RegisterOrLoginContainer: FC<Props> = ({ user }) => {
